@@ -14,16 +14,247 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #2D6A4F;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f2f2f2;
+  height: 50px;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+h1{
+  color: #52B788;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button{
+  width: 100%;
+  background-color: #52B788;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.false{
+  width: 100%;
+  background-color: #c2403c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #74C69D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=delete] {
+  width: 20%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #52B788;
+}
+
+.SubmitButton{
+  padding-top: 1%;
+  width: 20%;
+  float: right;
+}
+.ernaehrung_Accordion{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+}
+
+.polarchart{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.mobility_container {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2f2f2; 
+}
+
+.about_container {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.chart_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  background-color: #f2f2f2; 
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+}
+
+.container {  
+  display: flex;
+  padding-top: 100px;  
+  padding-bottom: 100px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2; 
+  height: 100%;
+}
+.container2 {  
+  display: flex;
+  padding-top: 50px;  
+  padding-bottom: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2; 
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .ernaehrung_container  {
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .chart_container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1105px) {
+  .mobility_container  {
+    display: flex;
+    flex-direction: column;
+  }   
+}
+
+@media (max-width: 700px) {
+  .about_container  {
+    display: flex;
+    flex-direction: column;
+  }   
+}
+
+.test {
+  border-style: solid;
+  border-color: green;
+  border-radius: 35px;
+
+
+}
+.showTable{
+  text-align: center;
+  border-radius: 35px;
+  border-color: grey;
+}
+
+
+.showContent {
+  margin: .5rem;
+  padding: .5rem;
+  background-color: lightgrey;
+  width: 330px;
+  height: 220px;
+}
+
+.car {
+  margin: .5rem;
+  padding: .5rem;
+  background-color: lightgrey;
+  width: 330px;
+  height: 220px;
+}
+
+
+.Welcome{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.Carusel {  
+ display: flex;
+ justify-content: center;
+ background-color: #f2f2f2;
+}
+
+.Content{
+  
+  min-height: 60vh;
+  background-color: #FFFFFF;
+}
+
+.ernaehrung_Accordion form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+
+
+.mobility_container  form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-shrink: 0;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +267,15 @@
     transform: rotate(360deg);
   }
 }
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+}
+
+
+
+
